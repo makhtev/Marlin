@@ -31,7 +31,7 @@
 
 // Use one of these or SDCard-based Emulation will be used
 //#define SRAM_EEPROM_EMULATION   // Use BackSRAM-based EEPROM emulation
-//#define FLASH_EEPROM_EMULATION  // Use Flash-based EEPROM emulation
+#define FLASH_EEPROM_EMULATION  // Use Flash-based EEPROM emulation
 
 //
 // Servos
@@ -54,6 +54,9 @@
 #ifndef Z_MIN_PROBE_PIN
   #define Z_MIN_PROBE_PIN  PA2
 #endif
+
+// PSU
+#define PS_ON_PIN PC9
 
 //
 // Steppers
